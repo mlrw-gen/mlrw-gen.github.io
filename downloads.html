@@ -47,6 +47,8 @@
             position: relative;
             overflow: hidden;
             text-decoration: none;
+            outline: none; /* Remove default outline */
+            border: 2px solid transparent; /* Add transparent border for outline effect */
         }
         .pretty-button::before {
             content: '';
@@ -62,6 +64,9 @@
         }
         .pretty-button:hover::before {
             transform: skewX(-45deg) translateX(0);
+        }
+        .pretty-button:hover {
+            border-color: #ff6600; /* Change border color on hover */
         }
         .pretty-button span {
             position: relative;

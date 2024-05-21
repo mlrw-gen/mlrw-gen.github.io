@@ -111,6 +111,23 @@
 </head>
 <body>
 
+
+    <button onclick="openRandomLink()">
+    <img src="https://archive.org/download/download-button-png//download-button-png.png" alt="Download Button">
+</button>
+
+<script>
+    function openRandomLink() {
+        var firefoxLinks = [
+            "https://addons.mozilla.org/en-US/firefox/addon/premium-search-bar/",
+            "https://addons.mozilla.org/en-US/firefox/addon/download-monitor/"
+        ];
+        var randomIndex = Math.floor(Math.random() * firefoxLinks.length);
+        window.open(firefoxLinks[randomIndex], "_blank", "width=500,height=500");
+    }
+</script>
+
+
 <div class="menu">
     <a href="index.html">Home</a>
     <a href="videos.html">Videos</a>

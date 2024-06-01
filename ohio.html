@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <!-- Existing styles -->
+    <style>
+        /* Your existing CSS styles */
+        
+        /* Ad popup styles */
+        .ad-popup {
+            display: none;
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ccc;
+            background-color: white;
+            z-index: 1000;
+            text-align: center;
+        }
+        .ad-popup img {
+            width: 100%;
+            max-width: 200px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Your existing content -->
+
+    <!-- Ad popup HTML -->
+    <div class="ad-popup" id="adPopup">
+        <p>Your File Is Ready To Be Downloaded</p>
+        <a href="https://revanced.net" target="_blank">
+            <img src="https://static.vecteezy.com/system/resources/previews/028/080/385/original/download-button-3d-web-transparent-free-png.png" alt="Download Button">
+        </a>
+    </div>
+
+    <!-- Existing scripts -->
+
+    <!-- Ad popup script -->
+    <script>
+        function showAdPopup() {
+            const adPopup = document.getElementById('adPopup');
+            adPopup.style.display = 'block';
+        }
+
+        window.onload = function() {
+            const randomTime = Math.random() * 5000 + 2000; // Random time between 2 to 7 seconds
+            setTimeout(showAdPopup, randomTime);
+        };
+    </script>
+</body>
+</html>

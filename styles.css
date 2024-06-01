@@ -1,0 +1,25 @@
+.fake-download-button {
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px #1e7e34;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.fake-download-button:hover {
+    background-color: #218838;
+    box-shadow: 0 4px #1e7e34;
+}
+
+.fake-download-button:active {
+    box-shadow: 0 2px #1e7e34;
+    transform: translateY(2px);
+}

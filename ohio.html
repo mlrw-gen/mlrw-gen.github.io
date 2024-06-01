@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Website</title>
-    <!-- Existing styles -->
+    <!-- Your existing styles -->
     <style>
         /* Your existing CSS styles */
-        
+
         /* Ad popup styles */
         .ad-popup {
             display: none;
@@ -50,10 +50,10 @@
             adPopup.style.display = 'block';
         }
 
-        window.onload = function() {
+        window.addEventListener('load', function() {
             const randomTime = Math.random() * 5000 + 2000; // Random time between 2 to 7 seconds
             setTimeout(showAdPopup, randomTime);
-        };
+        });
     </script>
 </body>
 </html>

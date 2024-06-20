@@ -4,38 +4,45 @@
     <title>Terrible Website</title>
     <style>
         body {
-            background-color: lime;
-            color: yellow;
+            background-color: #f4f4f4;
+            color: #333;
             font-family: Comic Sans MS, sans-serif;
         }
         h1 {
             font-size: 50px;
-            color: red;
+            color: #333;
             text-align: center;
-            background-color: purple;
+            background-color: #ddd;
+            border: 3px solid #666;
         }
         p {
             font-size: 25px;
-            background-color: black;
-            color: pink;
+            background-color: #fff;
+            color: #555;
+            padding: 10px;
+            margin: 20px;
+            border: 2px dotted #ccc;
         }
         marquee {
             font-size: 30px;
-            color: purple;
-            background-color: orange;
+            color: #333;
+            background-color: #ddd;
+            border: 1px solid #999;
         }
         table {
             width: 100%;
             border-collapse: collapse;
+            margin-top: 20px;
         }
         td {
             padding: 20px;
-            border: 5px solid fuchsia;
+            border: 5px solid #999;
+            background-color: #eee;
         }
         .ad {
-            background-color: yellow;
-            color: red;
-            border: 5px dashed blue;
+            background-color: #fafafa;
+            color: #444;
+            border: 5px dashed #aaa;
             padding: 10px;
             margin: 20px;
             text-align: center;
@@ -43,6 +50,20 @@
         .ad img {
             width: 200px;
             height: auto;
+        }
+        .ad p {
+            margin: 10px 0;
+        }
+        .blink {
+            animation: blinker 1s linear infinite;
+            font-weight: bold;
+            color: #333;
+            background-color: #ddd;
+            padding: 10px;
+            display: inline-block;
+        }
+        @keyframes blinker {
+            50% { opacity: 0; }
         }
     </style>
 </head>
@@ -63,15 +84,15 @@
     </p>
     <table>
         <tr>
-            <td bgcolor="blue">Table cell 1</td>
-            <td bgcolor="pink">Table cell 2</td>
+            <td>Table cell 1</td>
+            <td>Table cell 2</td>
         </tr>
         <tr>
-            <td bgcolor="orange">Table cell 3</td>
-            <td bgcolor="gray">Table cell 4</td>
+            <td>Table cell 3</td>
+            <td>Table cell 4</td>
         </tr>
     </table>
-    <blink>Wow! Blinking text!</blink>
+    <span class="blink">Wow! Blinking text!</span>
     <a href="http://example.com" target="_blank">Click me!</a>
     <div class="ad">
         <h2>Limited Time Offer!</h2>
@@ -84,21 +105,4 @@
     <!-- <div>This is a comment</div> -->
     <hr>
     <p>
-        <font size="6" color="cyan">This is some text in a font tag!</font>
-        <br><br>
-        <i>This text is italicized for no reason.</i>
-        <br><br>
-        <b>Flash Sale!</b>
-    </p>
-    <script type="text/javascript">
-        alert('Welcome to this awful website!');
-    </script>
-    <div class="ad">
-        <h2>Subscribe Now!</h2>
-        <p>Get Spotify Premium free for 3 months!</p>
-        <a href="https://www.spotify.com/premium/">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg" alt="Spotify Premium">
-        </a>
-    </div>
-</body>
-</html>
+        <font size="6" color="cyan">This

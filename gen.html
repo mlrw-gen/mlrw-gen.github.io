@@ -3,18 +3,59 @@
 <head>
     <title>Terrible Website</title>
     <style>
-        body { background-color: lime; color: yellow; font-family: Comic Sans MS, sans-serif; }
-        h1 { font-size: 50px; color: red; }
-        p { font-size: 25px; }
-        marquee { font-size: 30px; color: purple; }
+        body {
+            background-color: lime;
+            color: yellow;
+            font-family: Comic Sans MS, sans-serif;
+        }
+        h1 {
+            font-size: 50px;
+            color: red;
+            text-align: center;
+            background-color: purple;
+        }
+        p {
+            font-size: 25px;
+            background-color: black;
+            color: pink;
+        }
+        marquee {
+            font-size: 30px;
+            color: purple;
+            background-color: orange;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 20px;
+            border: 5px solid fuchsia;
+        }
+        .ad {
+            background-color: yellow;
+            color: red;
+            border: 5px dashed blue;
+            padding: 10px;
+            margin: 20px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <h1 align="center">Welcome to the Worst Website!</h1>
+    <h1>Welcome to the Worst Website!</h1>
+    <div class="ad">
+        <h2>BUY NOW!</h2>
+        <p>Best product ever! Only $99.99!</p>
+        <img src="nonexistentad.jpg" alt="Ad Image">
+    </div>
     <marquee>Look at this scrolling text!</marquee>
     <img src="nonexistentimage.jpg" alt="Missing Image">
-    <p style="font-family: 'Courier New', Courier, monospace; color: green;">This paragraph has different inline styles. Isn't it great?</p>
-    <table border="5">
+    <p style="font-family: 'Courier New', Courier, monospace; color: green;">
+        This paragraph has different inline styles. Isn't it great? <br><br>
+        <b>Don't miss our sale!</b>
+    </p>
+    <table>
         <tr>
             <td bgcolor="blue">Table cell 1</td>
             <td bgcolor="pink">Table cell 2</td>
@@ -26,6 +67,11 @@
     </table>
     <blink>Wow! Blinking text!</blink>
     <a href="http://example.com" target="_blank">Click me!</a>
+    <div class="ad">
+        <h2>Limited Time Offer!</h2>
+        <p>Get 50% off on your next purchase!</p>
+        <img src="anothernonexistentad.jpg" alt="Ad Image">
+    </div>
     <!-- Commented out code for no reason -->
     <!-- <div>This is a comment</div> -->
     <hr>
@@ -33,10 +79,16 @@
         <font size="6" color="cyan">This is some text in a font tag!</font>
         <br><br>
         <i>This text is italicized for no reason.</i>
+        <br><br>
+        <b>Flash Sale!</b>
     </p>
     <script type="text/javascript">
         alert('Welcome to this awful website!');
     </script>
+    <div class="ad">
+        <h2>Subscribe Now!</h2>
+        <p>Join our newsletter for the latest updates!</p>
+        <img src="yetanothernonexistentad.jpg" alt="Ad Image">
+    </div>
 </body>
 </html>
-
